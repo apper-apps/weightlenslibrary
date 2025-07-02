@@ -4,14 +4,15 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
+theme: {
     extend: {
       colors: {
         primary: '#1A1A1A',
         secondary: '#4A4A4A',
-        accent: '#00D084',
+        accent: '#FF6B35',
+        'accent-purple': '#8B5CF6',
         surface: '#F5F5F5',
-        success: '#00D084',
+        success: '#10B981',
         warning: '#FFB800',
         error: '#FF3B30',
         info: '#007AFF',
@@ -37,11 +38,11 @@ export default {
         slideUp: {
           '0%': { transform: 'translateY(20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
+},
         pulseSuccess: {
-          '0%': { transform: 'scale(1)', backgroundColor: '#00D084' },
-          '50%': { transform: 'scale(1.02)', backgroundColor: '#00E090' },
-          '100%': { transform: 'scale(1)', backgroundColor: '#00D084' },
+          '0%': { transform: 'scale(1)', backgroundColor: '#FF6B35' },
+          '50%': { transform: 'scale(1.02)', backgroundColor: '#FF8A65' },
+          '100%': { transform: 'scale(1)', backgroundColor: '#FF6B35' },
         },
       },
     },

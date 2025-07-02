@@ -122,13 +122,12 @@ const TipSystem = ({ weightEntries, goal }) => {
       <motion.div
         initial={{ opacity: 0, y: 20, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
-        exit={{ opacity: 0, y: -20, scale: 0.95 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
-        <Card className="bg-gradient-to-r from-accent/5 to-success/5 border-accent/20">
+        <Card className="bg-gradient-to-r from-accent/5 to-accent-purple/5 border-accent/20">
           <div className="flex items-start space-x-3">
             <motion.div
-              className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center"
+              className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-accent/10 to-accent-purple/10 rounded-full flex items-center justify-center"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.1, type: "spring", stiffness: 200 }}

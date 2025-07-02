@@ -56,10 +56,10 @@ const WeightGraph = ({ weightEntries, goal, loading }) => {
     },
     stroke: {
       curve: 'smooth',
-      width: [3, 2],
+width: [3, 2],
       dashArray: [0, 5]
     },
-    colors: ['#00D084', '#4A4A4A'],
+    colors: ['#FF6B35', '#8B5CF6'],
     grid: {
       show: true,
       borderColor: '#f1f1f1',
@@ -115,10 +115,10 @@ const WeightGraph = ({ weightEntries, goal, loading }) => {
       fontSize: '12px',
       fontFamily: 'Inter',
       markers: { width: 8, height: 8 }
-    },
+},
     markers: {
       size: [4, 0],
-      colors: ['#00D084'],
+      colors: ['#FF6B35'],
       strokeColors: '#ffffff',
       strokeWidth: 2,
       hover: { size: 6 }
