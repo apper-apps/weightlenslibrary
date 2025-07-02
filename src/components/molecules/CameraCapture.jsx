@@ -75,11 +75,12 @@ const CameraCapture = ({ onMealCaptured }) => {
     fileInputRef.current.value = '';
   };
 
-  return (
+return (
     <>
       {/* Fixed Camera Button */}
       <motion.div
-        className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50"
+        className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-60 pb-safe"
+        style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -88,7 +89,7 @@ const CameraCapture = ({ onMealCaptured }) => {
           size="lg"
           onClick={handleCameraClick}
           disabled={isCapturing}
-          className="w-16 h-16 rounded-full shadow-deep bg-accent hover:bg-accent/90 border-4 border-white"
+          className="w-16 h-16 rounded-full shadow-2xl bg-accent hover:bg-accent/90 border-4 border-white backdrop-blur-sm"
         >
           {isCapturing ? (
             <motion.div

@@ -96,9 +96,8 @@ const Dashboard = () => {
           {format(new Date(), 'EEEE, MMMM d, yyyy')}
         </p>
       </motion.header>
-
-      {/* Main Content */}
-      <div className="max-w-md mx-auto px-4 pb-24 space-y-6">
+{/* Main Content */}
+      <div className="max-w-md mx-auto px-4 pb-32 space-y-6">
         {/* Stats Overview */}
         <StatsOverview 
           weightEntries={weightEntries}
